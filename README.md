@@ -19,12 +19,14 @@ THEN I am again presented with current and future conditions for that city
 ## Description
 This app is a 5 day weather Forecaster for any city entered. Previous cities are also listed and clickable to display most current data.
 
-## Website
+## Usage
 Run this app by navigating to:<br>
+<br>
 https://jaystarz360.github.io/WeatherTracker/<br>
+<br>
 Please enter City and click search
 <br>
 <br>
-
+# Here is a screenshot for example:
 ![weather-app](weather-app-visual.jpg)
 
