@@ -16,12 +16,15 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
-Description
+## Description
 This app is a 5 day weather Forecaster for any city entered. Previous cities are also listed and clickable to display most current data.
 
-# Website
+## Website
 Run this app by navigating to:<br>
-https://jaystarz360.github.io/WeatherTracker/
+https://jaystarz360.github.io/WeatherTracker/<br>
+Please enter City and click search
+<br>
+<br>
 
 ![weather-app](weather-app-visual.jpg)
 
