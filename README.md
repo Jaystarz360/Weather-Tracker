@@ -21,7 +21,7 @@ This app is a 5 day weather Forecaster for any city entered. Previous cities are
 
 # Website
 Run this app by navigating to:<br>
-//////
+https://jaystarz360.github.io/WeatherTracker/
 
 ![weather-app](weather-app-visual.jpg)
 
