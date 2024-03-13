@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joshua Cherry">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="5 day weather forecast for any city." />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <!-- Search For a City on Left of Window -->
+    <div class="grid-container">
+        <div class="city-search">Search For A City: 
+            <input type="text" id="cityInput" style="text-transform: uppercase" />
+            <button class="searchBtn" type="submit"><span class="oi oi-magnifying-glass"></span></button>
+
+        </div>
+        <!-- This shows the search history and is reclickable -->
+        <div class="city-history" id="city-history">
+
+        </div>
+
+    <!-- Right Half of Window shows Results -->
+        <div class="weather">
+            <h3 id="today"></h3>
+            <div class="city-icon">
+                <h2 id="city"></h2>
+                <img src="" id="icon">
+            </div>
+                <div class="description">
+                    <ul>
+                        <li class="temp"></li>
+                        <li class="humid"></li>
+                        <li class="speed"></li>
+                        <li class="uv"></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="weather5">
+            <h3>5-Day Forecast: </h3>
+            <div class="day1">
+                <h5 id="day1"></h5>
+                <img src="" id="icon1">
+                <ul>
+                    <li class="temp1"></li>
+                    <li class="humid1"></li>
+                </ul>
+            </div>
+            <div class="day2">
+                <h5 id="day2"></h5>
+                <img src="" id="icon2">
+                <ul>
+                    <li class="temp2"></li>
+                    <li class="humid2"></li>
+                </ul>
+            </div>
+            <div class="day3">
+                <h5 id="day3"></h5>
+                <img src="" id="icon3">
+                <ul>
+                    <li class="temp3"></li>
+                    <li class="humid3"></li>
+                </ul>
+            </div>
+            <div class="day4">
+                <h5 id="day4"></h5>
+                <img src="" id="icon4">
+                <ul>
+                    <li class="temp4"></li>
+                    <li class="humid4"></li>
+                </ul>
+            </div>
+            <div class="day5">
+                <h5 id="day5"></h5>
+                <img src="" id="icon5">
+                <ul>
+                    <li class="temp5"></li>
+                    <li class="humid5"></li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    font-size: 30px;
+    background: #000000;
+    color: #99ccff;
+    padding: 20px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+footer {
+    position: -webkit-sticky;
+    bottom: 0em;
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    background-color: #000000;
+    color: #99ccff;
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px repeat(3, 1fr);
+    grid-template-rows: 80px repeat(15. 1fr);
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.city-search {
+    margin: 10px;
+    padding: 5px;
+    grid-area: 1 / 1 / span 1 / span 2;
+    justify-self: flex-start;
+    font-size: 20px;
+}
+
+#cityInput {
+    font-size: 14px;
+    border: #2366eb solid 2px;
+}
+
+.city-history {
+    grid-area: 3 / 1 / span 5 / span 2;
+}
+
+.searchBtn {
+    background: #2366eb;
+    border-radius: 5px;
+    border: 2px solid #1be0dd;
+    color: white;
+}
+
+.searchBtn:hover {
+    background: #15c7eb;
+}
+
+.weather {
+    border-left: black solid 3px;
+    grid-area: 1 / 3 / span 3 / span 3;
+    text-align: end;
+    justify-self: left;
+    display: inline;
+    width: 100%;
+    border: solid #2366eb 3px;
+    margin: 5px;
+    padding: 10px;
+    background: #99ccff;
+}
+#icon {
+    display: block;
+    align-content: flex-start;
+}
+.weather ul {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    font-size: 20px;
+}
+
+.weather h3 {
+    text-align: left;
+}
+
+.weather h2 {
+    text-align: left;
+}
+
+.description {
+    text-align: left;
+}
+
+
+.city-icon {
+    display: flex;
+}
+
+.day1, .day2, .day3, .day4, .day5 {
+    background: #2366eb;
+    color: white;
+    display: inline-grid;
+    width: 120px;
+    height: 175px;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.day1:hover, .day2:hover, .day3:hover, .day4:hover, .day5:hover {
+    background: #99ccff;
+}
+
+.weather5 {
+    grid-area: 4 / 3 / span 5 / span 5;
+    gap: 10px;
+}
+
+.weather5 ul {
+    list-style: none;
+    display: contents;
+    text-align: left;
+}
+
+.city-history button {
+    width: 135px;
+    height: 40px;
+    border: solid 2px #2366eb;
+    margin: 5px;
+}
+
+.city-history button:hover {
+    background: #99ccff;
+}
+
+/*MEDIA QUERY FOR SMALL DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .city-search {
+        margin: 0;
+        padding: 5px;
+        grid-area: 1 / 1 / span 1 / span 4;
+        justify-self: flex-start;
+        font-size: 20px;
+        display: inline-table;
+    }
+
+    .weather {
+        border-left: black solid 3px;
+        grid-area: 2 / 1 / span 3 / span 4;
+        text-align: end;
+        justify-self: left;
+        display: inline;
+        width: 100%;
+        border: solid #2366eb 3px;
+        margin: 5px;
+        padding: 10px;
+        background: #99ccff;
+    }
+
+    #today {
+        font-size: 18px;
+    }
+
+    #city {
+        font-size: 18px;
+    }
+
+    .description ul li {
+        font-size: 15px;
+    }
+
+    .city-history{
+        grid-area: 11 / 1 / span 3 / span 4;
+    }
+
+    .weather5 { 
+        grid-area: 7 / 1 / span 3 / span 5;
+        gap: 10px;
+    }
+
+    .day1, .day2, .day3, .day4, .day5 {
+        background: #2366eb;
+        color: white;
+        display: inline-grid;
+        width: 100px;
+        height: 150px;
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    h5{
+        font-size: 14px;
+    }
+
+    .weather5 ul li { 
+        font-size: 14px;
+    }
+}
